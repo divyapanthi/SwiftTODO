@@ -13,6 +13,8 @@
 		DA0FCF28289A4C080067A092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0FCF26289A4C080067A092 /* Main.storyboard */; };
 		DA0FCF2A289A4C120067A092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA0FCF29289A4C120067A092 /* Assets.xcassets */; };
 		DA0FCF2D289A4C120067A092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0FCF2B289A4C120067A092 /* LaunchScreen.storyboard */; };
+		DA27BD4828AB717400D521F8 /* todoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27BD4628AB717400D521F8 /* todoCell.swift */; };
+		DA27BD4928AB717400D521F8 /* todoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA27BD4728AB717400D521F8 /* todoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DA0FCF29289A4C120067A092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA0FCF2C289A4C120067A092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA0FCF2E289A4C120067A092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA27BD4628AB717400D521F8 /* todoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoCell.swift; sourceTree = "<group>"; };
+		DA27BD4728AB717400D521F8 /* todoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = todoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				DA0FCF29289A4C120067A092 /* Assets.xcassets */,
 				DA0FCF2B289A4C120067A092 /* LaunchScreen.storyboard */,
 				DA0FCF2E289A4C120067A092 /* Info.plist */,
+				DA27BD4628AB717400D521F8 /* todoCell.swift */,
+				DA27BD4728AB717400D521F8 /* todoCell.xib */,
 			);
 			path = MyTodo;
 			sourceTree = "<group>";
@@ -128,6 +134,7 @@
 				DA0FCF2D289A4C120067A092 /* LaunchScreen.storyboard in Resources */,
 				DA0FCF2A289A4C120067A092 /* Assets.xcassets in Resources */,
 				DA0FCF28289A4C080067A092 /* Main.storyboard in Resources */,
+				DA27BD4928AB717400D521F8 /* todoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +148,7 @@
 				DA0FCF25289A4C080067A092 /* ViewController.swift in Sources */,
 				DA0FCF21289A4C080067A092 /* AppDelegate.swift in Sources */,
 				DA0FCF23289A4C080067A092 /* SceneDelegate.swift in Sources */,
+				DA27BD4828AB717400D521F8 /* todoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

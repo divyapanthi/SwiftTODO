@@ -15,10 +15,25 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XEL-Oz-tU7">
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XEL-Oz-tU7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mha-th-kBh"/>
+                            <constraint firstItem="XEL-Oz-tU7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="k70-dv-bKy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XEL-Oz-tU7" secondAttribute="bottom" id="yIm-EZ-90g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XEL-Oz-tU7" secondAttribute="trailing" id="yVr-jk-abt"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UfH-9T-15D"/>
+                    <connections>
+                        <outlet property="tableView" destination="XEL-Oz-tU7" id="HG3-5f-1d7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
