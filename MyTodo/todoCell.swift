@@ -12,7 +12,11 @@ class todoCell: UITableViewCell {
     
     @IBOutlet weak var lblTitle: UILabel!
     
+    @IBOutlet weak var imgTitle: UIImageView!
+    
     @IBOutlet weak var lblDescription: UILabel!
+    
+    @IBOutlet weak var imgDescription: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
