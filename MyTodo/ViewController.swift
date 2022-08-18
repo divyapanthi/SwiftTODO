@@ -22,7 +22,7 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
     override func viewDidLoad() {
         super.viewDidLoad()
  
-        todoListArray.append(todoItem(title: "Go shopping", description: "Buy tshirt and shorts", imgTitle: UIImage(named: "boy"), imgDescription: UIImage(named: "girl" )))
+//        todoListArray.append(todoItem(title: "Go shopping", description: "Buy tshirt and shorts"))
 
         title = "To Do List"
 
@@ -45,11 +45,6 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
         @objc private func didTapAdd(){
     
             let alert = UIAlertController(title: "New Item", message: "Enter a new todo list item",   preferredStyle: .alert)
-            
-            let imageView = UIImageView(frame: CGRect(x: 220, y: 10, width: 40, height: 40))
-            imageView.image = UIImage(named: "boy")
-
-            alert.view.addSubview(imageView)
             
             alert.addTextField { field in
     
@@ -110,14 +105,10 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
             
         let cell = tableView.dequeueReusableCell(withIdentifier: "todoCell", for: indexPath)  as! todoCell
                 
-                cell.lblTitle.text  = self.todoListArray[indexPath.row].title
+            cell.lblTitle.text  = self.todoListArray[indexPath.row].title
                 
-                cell.lblDescription.text = self.todoListArray[indexPath.row].description
-            
-            cell.imgTitle.image = self.todoListArray[indexPath.row].imgTitle
-            
-            cell.imgDescription.image = self.todoListArray[indexPath.row].imgDescription
-            
+            cell.lblDescription.text = self.todoListArray[indexPath.row].description
+                        
             return cell
                 
 //            }
