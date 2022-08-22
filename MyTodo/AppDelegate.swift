@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  MyTodo
 //
-//  Created by Sushil Dhital on 03/08/2022.
+//  Created by Divya Panthi on 03/08/2022.
 //
 
 import UIKit

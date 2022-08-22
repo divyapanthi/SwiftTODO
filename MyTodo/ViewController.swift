@@ -7,9 +7,9 @@ struct todoItem {
     
     var description : String
     
-    var imgTitle : UIImage?
-    
-    var imgDescription : UIImage?
+//    var imgTitle : UIImage?
+//
+//    var imgDescription : UIImage?
     
 }
 
@@ -35,9 +35,7 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        
-        debugPrint(self.todoListArray)
-        
+    
         
         
     }
@@ -65,21 +63,14 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
             alert.addAction(UIAlertAction(title: "Done", style: .default, handler: { [weak self]
                 (_) in
     
-                if let field = alert.textFields?.first {
+                if let field1 = alert.textFields?.first, let field2 = alert.textFields?[1] {
     
-                    if let text = field.text, !text.isEmpty {
+                    if let text = field1.text, !text.isEmpty, let desc = field2.text {
     
                         //Enter new to do list item
-    
                         DispatchQueue.main.async {
     
-                            var currentItems = UserDefaults.standard.stringArray(forKey: "todoItems") ?? []
-    
-                            currentItems.append(text)
-    
-                            UserDefaults.standard.setValue(currentItems, forKey: "todoItems")
-    
-                            self?.todoListArray.append(todoItem(title: text, description: text))
+                            self?.todoListArray.append(todoItem(title: text, description: desc))
     
                             self?.tableView.reloadData()
                         }
@@ -94,7 +85,6 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
     
         }
 
-    
 
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 
@@ -128,5 +118,14 @@ class ViewController : UIViewController, UITableViewDelegate, UITableViewDataSou
                 }
         
             }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "Collection", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "CollectionVC")
+        self.present(controller, animated: true, completion: nil)
+        
+    }
  
 }

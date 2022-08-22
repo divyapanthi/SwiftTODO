@@ -15,6 +15,10 @@
 		DA0FCF2D289A4C120067A092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA0FCF2B289A4C120067A092 /* LaunchScreen.storyboard */; };
 		DA27BD4828AB717400D521F8 /* todoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA27BD4628AB717400D521F8 /* todoCell.swift */; };
 		DA27BD4928AB717400D521F8 /* todoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA27BD4728AB717400D521F8 /* todoCell.xib */; };
+		DA6C8B0128B358AE0013EBAF /* CollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6C8B0028B358AE0013EBAF /* CollectionVC.swift */; };
+		DA6C8B0328B358C60013EBAF /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6C8B0228B358C60013EBAF /* Collection.storyboard */; };
+		DADB171E28B361AF0013CDD5 /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADB171C28B361AE0013CDD5 /* CollectionCell.swift */; };
+		DADB171F28B361AF0013CDD5 /* CollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DADB171D28B361AF0013CDD5 /* CollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		DA0FCF2E289A4C120067A092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA27BD4628AB717400D521F8 /* todoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoCell.swift; sourceTree = "<group>"; };
 		DA27BD4728AB717400D521F8 /* todoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = todoCell.xib; sourceTree = "<group>"; };
+		DA6C8B0028B358AE0013EBAF /* CollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionVC.swift; sourceTree = "<group>"; };
+		DA6C8B0228B358C60013EBAF /* Collection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Collection.storyboard; sourceTree = "<group>"; };
+		DADB171C28B361AE0013CDD5 /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
+		DADB171D28B361AF0013CDD5 /* CollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,10 @@
 				DA0FCF2E289A4C120067A092 /* Info.plist */,
 				DA27BD4628AB717400D521F8 /* todoCell.swift */,
 				DA27BD4728AB717400D521F8 /* todoCell.xib */,
+				DA6C8B0028B358AE0013EBAF /* CollectionVC.swift */,
+				DA6C8B0228B358C60013EBAF /* Collection.storyboard */,
+				DADB171C28B361AE0013CDD5 /* CollectionCell.swift */,
+				DADB171D28B361AF0013CDD5 /* CollectionCell.xib */,
 			);
 			path = MyTodo;
 			sourceTree = "<group>";
@@ -134,7 +146,9 @@
 				DA0FCF2D289A4C120067A092 /* LaunchScreen.storyboard in Resources */,
 				DA0FCF2A289A4C120067A092 /* Assets.xcassets in Resources */,
 				DA0FCF28289A4C080067A092 /* Main.storyboard in Resources */,
+				DADB171F28B361AF0013CDD5 /* CollectionCell.xib in Resources */,
 				DA27BD4928AB717400D521F8 /* todoCell.xib in Resources */,
+				DA6C8B0328B358C60013EBAF /* Collection.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +163,8 @@
 				DA0FCF21289A4C080067A092 /* AppDelegate.swift in Sources */,
 				DA0FCF23289A4C080067A092 /* SceneDelegate.swift in Sources */,
 				DA27BD4828AB717400D521F8 /* todoCell.swift in Sources */,
+				DA6C8B0128B358AE0013EBAF /* CollectionVC.swift in Sources */,
+				DADB171E28B361AF0013CDD5 /* CollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +327,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -338,7 +354,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
